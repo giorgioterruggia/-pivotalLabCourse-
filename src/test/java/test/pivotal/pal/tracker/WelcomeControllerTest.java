@@ -8,7 +8,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class WelcomeControllerTest {
 
-    @Ignore
     @Test
     public void itSaysHello() throws Exception {
         WelcomeController controller = new WelcomeController("A welcome message");
