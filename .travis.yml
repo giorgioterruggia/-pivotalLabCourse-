@@ -4,7 +4,6 @@ notifications:
   email: false
 env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
-  - GITHUB_OAUTH_TOKEN="447e73170891b268799dbc5f0bb0f198701e4afa"
 if: tag IS blank
 
 
