@@ -10,16 +10,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
+import javax.sql.DataSource;
+
 @SpringBootApplication
 public class PalTrackerApplication {
     public static void main(String[] args) {
         SpringApplication.run(PalTrackerApplication.class, args);
-
     }
 
     @Bean
-    TimeEntryRepository timeEntryRepository() {
-        return new InMemoryTimeEntryRepository();
+    TimeEntryRepository timeEntryRepository(DataSource dataSource) {
+        return new JdbcTimeEntryRepository(dataSource);
     }
 
     @Bean
