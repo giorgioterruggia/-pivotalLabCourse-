@@ -22,12 +22,3 @@ bootRun.environment([
 test.environment([
         "WELCOME_MESSAGE": "Hello from test",
 ])
-
-assignments {
-    apiUrl = "https://api.sys.pikes.pal.pivotal.io"
-    emails = [
-            "giorgio.terruggia@gmail.com",
-            "massimo.sporchia@accenture.com",
-    ]
-    cohortIdentifier = "349802780"
-}
