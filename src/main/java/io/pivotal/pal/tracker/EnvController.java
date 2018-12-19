@@ -1,4 +1,4 @@
-package io.pivotal.pal.tracker.io.pivotal.pal;
+package io.pivotal.pal.tracker;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
